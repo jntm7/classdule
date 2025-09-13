@@ -22,69 +22,85 @@ struct TimetableView: View {
     
     var body: some View {
         ScrollView {
-            LazyVGrid(columns: gridColumns, spacing: 1) {
+            VStack(spacing: 1) {
+                headerRow
                 
-                // Header Row
-                Text("")
-                    .frame(width: 60, height: 40)
-                
-                // X-Axis Columns (Days)
-                ForEach(days, id: \.self) {
-                    day in Text(day)
-                        .font(.headline)
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 10)
-                        //.padding(.horizontal, 5)
-                        .background(Color.gray.opacity(0.1))
-                }
-                
-                // Y-Axis (Time)
                 ForEach(hours, id: \.self) {
                     hour in
-                        // Time Columns
-                        Text("\(formatHour(hour))")
-                            .font(.caption2)
-                            .frame(width: 60, height: 60)
-                            .background(Color.gray.opacity(0.1))
-                        
-                        // Day Columns
-                        ForEach(0..<7) {
-                            dayIndex in ZStack {
-                                Rectangle()
-                                    .fill(Color.clear)
-                                    .frame(minHeight: 60)
-                                    .border(Color.gray.opacity(0.2), width: 0.5)
-                                
-                                if let classForSlot = getClassForSlot(day: dayIndex, hour: hour) {
-                                    VStack(spacing: 2) {
-                                        Text(classForSlot.title)
-                                            .font(.caption2)
-                                            .fontWeight(.medium)
-                                            .foregroundColor(.white)
-                                            .multilineTextAlignment(.center)
-                                        Text(classForSlot.timeDisplay)
-                                            .font(.system(size: 8))
-                                            .foregroundColor(.white.opacity(0.9))
-                                    }
-                                    .padding(4)
-                                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                                    .background(classForSlot.color)
-                                    .cornerRadius(6)
-                                    .padding(1)
-                                }
-                            }
-                        }
-                    }
+                        timeRow(for: hour)
                 }
-                .padding()
+            }
+            .padding()
         }
         .navigationTitle("My Schedule")
         .navigationBarTitleDisplayMode(.inline)
     }
     
-    // Grid Layout
-    var gridColumns: [GridItem] {
-        Array(repeating: GridItem(.flexible(), spacing: 1), count: 8)
+    // Header Row
+    private var headerRow: some View {
+        HStack(spacing: 1) {
+            Text("")
+                .frame(width: 60, height: 40)
+            
+            // Days
+            ForEach(days, id: \.self) {
+                day in
+                    Text(day)
+                        .font(.caption)
+                        .fontWeight(.medium)
+                        .frame(maxWidth: .infinity, minHeight: 40)
+                        //.padding(.vertical, 10)
+                        //.padding(.horizontal, 5)
+                        .background(Color.gray.opacity(0.1))
+            }
+        }
+    }
+    
+    // Time Row
+    private func timeRow(for hour: Int) -> some View {
+        HStack(spacing: 1) {
+            Text(formatHour(hour))
+                .font(.caption2)
+                .frame(width: 60, height: 40)
+                .background(Color.gray.opacity(0.05))
+            
+            ForEach(0..<7) {
+                dayIndex in
+                   dayCell(day: dayIndex, hour: hour)
+            }
+        }
+    }
+    
+    // Day Cell
+    private func dayCell(day: Int, hour: Int) -> some View {
+        ZStack {
+            Rectangle()
+                .fill(Color.clear)
+                .frame(minHeight: 60)
+                .border(Color.gray.opacity(0.3), width: 0.5)
+            
+            if let classItem = getClassForSlot(day: day, hour: hour) {
+                classBlock(for: classItem)
+            }
+        }
+        .frame(maxWidth: .infinity)
+    }
+    
+
+    // Class Block
+    private func classBlock(for classItem: ClassSchedule) -> some View {
+        VStack(spacing: 2) {
+            Text(classItem.title)
+                .font(.caption2)
+                .fontWeight(.medium)
+                .foregroundColor(.white)
+                .multilineTextAlignment(.center)
+        }
+        .padding(5)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(classItem.color)
+        .cornerRadius(4)
+        .padding(1)
     }
     
     // Get Class Item
