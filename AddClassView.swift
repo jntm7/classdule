@@ -9,6 +9,8 @@ import SwiftUI
 
 struct AddClassView: View {
     @Environment(\.dismiss) private var dismiss
+    @ObservedObject var dataManager = ClassDataManager.shared
+    
     @State private var className = ""
     @State private var selectedDay = 1 // Default Monday
     @State private var startHour = 9 // Default 9
@@ -121,7 +123,16 @@ struct AddClassView: View {
     
     // Saving the Class
     func saveClass() {
-        print("Saving Class: \(className)")
+        let newClass = ClassSchedule(
+            title: className,
+            dayOfWeek: selectedDay,
+            startHour: startHour,
+            startMinute: startMinute,
+            durationMinutes: durationMinutes,
+            color: selectedColor
+        )
+        dataManager.addClass(newClass)
+        print("Saved Class: \(className)")
         dismiss()
     }
 }
