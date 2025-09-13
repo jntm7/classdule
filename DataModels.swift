@@ -13,12 +13,13 @@ struct ClassSchedule: Identifiable {
     let id = UUID()
     
     var title: String
-    var color: Color
     
-    var dayOfWeek: Int
+    var dayOfWeek: Int // 0=Sunday...6=Saturday
     var startHour: Int
     var startMinute: Int
     var durationMinutes: Int
+    
+    var color: Color
     
     var timeDisplay: String {
         let startTime = formatTime(hour: startHour, minute: startMinute)
