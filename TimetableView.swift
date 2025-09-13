@@ -8,17 +8,10 @@
 import SwiftUI
 
 struct TimetableView: View {
-    
+    @ObservedObject var dataManager = ClassDataManager.shared
+        
     let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
     let hours = Array(6...22) // 6AM to 10PM
-    
-    // Test Data
-    let classes: [ClassSchedule] = [
-        ClassSchedule(title: "MATH100", dayOfWeek: 1, startHour: 8, startMinute: 30, durationMinutes: 90, color: .blue),
-        ClassSchedule(title: "CHEM200", dayOfWeek: 3, startHour: 10, startMinute: 15, durationMinutes: 105, color: .green),
-        ClassSchedule(title: "BIO300", dayOfWeek: 5, startHour: 17, startMinute: 0, durationMinutes: 120, color: .yellow)
-    ]
-    
     
     var body: some View {
         ScrollView {
@@ -104,8 +97,8 @@ struct TimetableView: View {
     }
     
     // Get Class Item
-    func getClassForSlot(day: Int, hour: Int) -> ClassSchedule?{
-        return classes.first {
+    func getClassForSlot(day: Int, hour: Int) -> ClassSchedule? {
+        return dataManager.classes.first {
             classItem in
                 classItem.dayOfWeek == day &&
                 classItem.startHour <= hour &&
