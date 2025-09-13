@@ -12,6 +12,7 @@
 		6D2665B12E7544D300955E42 /* ClassItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2665B02E7544D300955E42 /* ClassItemView.swift */; };
 		6D2665B32E7544DD00955E42 /* AddClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2665B22E7544DD00955E42 /* AddClassView.swift */; };
 		6D2665B52E7556D400955E42 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2665B42E7556D400955E42 /* HomeView.swift */; };
+		6D2665B72E75D52600955E42 /* ClassDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2665B62E75D52600955E42 /* ClassDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		6D2665B02E7544D300955E42 /* ClassItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassItemView.swift; sourceTree = "<group>"; };
 		6D2665B22E7544DD00955E42 /* AddClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClassView.swift; sourceTree = "<group>"; };
 		6D2665B42E7556D400955E42 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		6D2665B62E75D52600955E42 /* ClassDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -88,6 +90,7 @@
 		6D2665782E75383600955E42 = {
 			isa = PBXGroup;
 			children = (
+				6D2665B62E75D52600955E42 /* ClassDataManager.swift */,
 				6D2665B42E7556D400955E42 /* HomeView.swift */,
 				6D2665B22E7544DD00955E42 /* AddClassView.swift */,
 				6D2665B02E7544D300955E42 /* ClassItemView.swift */,
@@ -258,6 +261,7 @@
 				6D2665B52E7556D400955E42 /* HomeView.swift in Sources */,
 				6D2665B32E7544DD00955E42 /* AddClassView.swift in Sources */,
 				6D2665AC2E753DF800955E42 /* DataModels.swift in Sources */,
+				6D2665B72E75D52600955E42 /* ClassDataManager.swift in Sources */,
 				6D2665B12E7544D300955E42 /* ClassItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
