@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6D2665AC2E753DF800955E42 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2665AB2E753DF800955E42 /* DataModels.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		6D26658F2E75383700955E42 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		6D2665812E75383600955E42 /* eduTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eduTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D26658E2E75383700955E42 /* eduTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eduTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D2665982E75383700955E42 /* eduTableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eduTableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D2665AB2E753DF800955E42 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +80,7 @@
 		6D2665782E75383600955E42 = {
 			isa = PBXGroup;
 			children = (
+				6D2665AB2E753DF800955E42 /* DataModels.swift */,
 				6D2665832E75383600955E42 /* eduTable */,
 				6D2665912E75383700955E42 /* eduTableTests */,
 				6D26659B2E75383700955E42 /* eduTableUITests */,
@@ -236,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D2665AC2E753DF800955E42 /* DataModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
