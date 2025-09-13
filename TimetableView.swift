@@ -12,6 +12,14 @@ struct TimetableView: View {
     let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
     let hours = Array(6...22)
     
+    // Test Data
+    @State private var classes: [ClassSchedule] = [
+        ClassSchedule(title: "MATH100", dayOfWeek: "Mon", startHour: 8, startMinute: 30, durationMinutes: 90, color: .blue)
+        ClassSchedule(title: "MATH100", dayOfWeek: "Wed", startHour: 10, startMinute: 15, durationMinutes: 105, color: .green)
+        ClassSchedule(title: "MATH100", dayOfWeek: "Fri", startHour: 17, startMinute: 0, durationMinutes: 120, color: .yellow)
+    ]
+    
+    
     
     var body: some View {
         ScrollView {
