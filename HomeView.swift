@@ -1,6 +1,6 @@
 //
 //  HomeView.swift
-//  eduTable
+//  Classdule
 //
 //  Created by Jonathan Tam on 2025-09-13.
 //
@@ -32,7 +32,7 @@ struct HomeView: View {
                 .font(.system(size: 60))
                 .foregroundColor(.blue)
             // Name
-            Text("EDUschedule")
+            Text("Classdule")
                 .font(.largeTitle)
                 .fontWeight(.bold)
         }
@@ -88,14 +88,16 @@ struct HomeView: View {
     // Dark Mode Toggle
     private var darkModeToggle: some View {
         HStack {
-            Image(systemName: isDarkMode ? "moon.fill" : "sun.max.fill")
+            Image(systemName: "moon.fill")
                 .font(.title2)
-            Text(isDarkMode ? "Dark Mode" : "Light Mode")
+            Text("Dark Mode")
                 .font(.title2)
                 .fontWeight(.medium)
             Spacer()
-            Toggle("", isOn: $isDarkMode)
-                .labelsHidden()
+            Toggle(isOn: $isDarkMode) {
+                EmptyView()
+            }
+            .labelsHidden()
         }
         .padding(.horizontal, 20)
         .padding(.vertical, 30)

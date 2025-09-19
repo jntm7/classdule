@@ -33,9 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6D2665812E75383600955E42 /* eduTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eduTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D26658E2E75383700955E42 /* eduTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eduTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D2665982E75383700955E42 /* eduTableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eduTableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D2665812E75383600955E42 /* Classdule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Classdule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D26658E2E75383700955E42 /* ClassduleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassduleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D2665982E75383700955E42 /* ClassduleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassduleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D2665AB2E753DF800955E42 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
 		6D2665AE2E7544A000955E42 /* TimetableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableView.swift; sourceTree = "<group>"; };
 		6D2665B02E7544D300955E42 /* ClassItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassItemView.swift; sourceTree = "<group>"; };
@@ -45,19 +45,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		6D2665832E75383600955E42 /* eduTable */ = {
+		6D2665832E75383600955E42 /* Classdule */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = eduTable;
+			path = Classdule;
 			sourceTree = "<group>";
 		};
-		6D2665912E75383700955E42 /* eduTableTests */ = {
+		6D2665912E75383700955E42 /* ClassduleTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = eduTableTests;
+			path = ClassduleTests;
 			sourceTree = "<group>";
 		};
-		6D26659B2E75383700955E42 /* eduTableUITests */ = {
+		6D26659B2E75383700955E42 /* ClassduleUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = eduTableUITests;
+			path = ClassduleUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -96,9 +96,9 @@
 				6D2665B02E7544D300955E42 /* ClassItemView.swift */,
 				6D2665AE2E7544A000955E42 /* TimetableView.swift */,
 				6D2665AB2E753DF800955E42 /* DataModels.swift */,
-				6D2665832E75383600955E42 /* eduTable */,
-				6D2665912E75383700955E42 /* eduTableTests */,
-				6D26659B2E75383700955E42 /* eduTableUITests */,
+				6D2665832E75383600955E42 /* Classdule */,
+				6D2665912E75383700955E42 /* ClassduleTests */,
+				6D26659B2E75383700955E42 /* ClassduleUITests */,
 				6D2665822E75383600955E42 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,9 +106,9 @@
 		6D2665822E75383600955E42 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6D2665812E75383600955E42 /* eduTable.app */,
-				6D26658E2E75383700955E42 /* eduTableTests.xctest */,
-				6D2665982E75383700955E42 /* eduTableUITests.xctest */,
+				6D2665812E75383600955E42 /* Classdule.app */,
+				6D26658E2E75383700955E42 /* ClassduleTests.xctest */,
+				6D2665982E75383700955E42 /* ClassduleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,9 +116,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6D2665802E75383600955E42 /* eduTable */ = {
+		6D2665802E75383600955E42 /* Classdule */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6D2665A22E75383700955E42 /* Build configuration list for PBXNativeTarget "eduTable" */;
+			buildConfigurationList = 6D2665A22E75383700955E42 /* Build configuration list for PBXNativeTarget "Classdule" */;
 			buildPhases = (
 				6D26657D2E75383600955E42 /* Sources */,
 				6D26657E2E75383600955E42 /* Frameworks */,
@@ -129,18 +129,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				6D2665832E75383600955E42 /* eduTable */,
+				6D2665832E75383600955E42 /* Classdule */,
 			);
-			name = eduTable;
+			name = Classdule;
 			packageProductDependencies = (
 			);
 			productName = eduTable;
-			productReference = 6D2665812E75383600955E42 /* eduTable.app */;
+			productReference = 6D2665812E75383600955E42 /* Classdule.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6D26658D2E75383700955E42 /* eduTableTests */ = {
+		6D26658D2E75383700955E42 /* ClassduleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6D2665A52E75383700955E42 /* Build configuration list for PBXNativeTarget "eduTableTests" */;
+			buildConfigurationList = 6D2665A52E75383700955E42 /* Build configuration list for PBXNativeTarget "ClassduleTests" */;
 			buildPhases = (
 				6D26658A2E75383700955E42 /* Sources */,
 				6D26658B2E75383700955E42 /* Frameworks */,
@@ -152,18 +152,18 @@
 				6D2665902E75383700955E42 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				6D2665912E75383700955E42 /* eduTableTests */,
+				6D2665912E75383700955E42 /* ClassduleTests */,
 			);
-			name = eduTableTests;
+			name = ClassduleTests;
 			packageProductDependencies = (
 			);
 			productName = eduTableTests;
-			productReference = 6D26658E2E75383700955E42 /* eduTableTests.xctest */;
+			productReference = 6D26658E2E75383700955E42 /* ClassduleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6D2665972E75383700955E42 /* eduTableUITests */ = {
+		6D2665972E75383700955E42 /* ClassduleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6D2665A82E75383700955E42 /* Build configuration list for PBXNativeTarget "eduTableUITests" */;
+			buildConfigurationList = 6D2665A82E75383700955E42 /* Build configuration list for PBXNativeTarget "ClassduleUITests" */;
 			buildPhases = (
 				6D2665942E75383700955E42 /* Sources */,
 				6D2665952E75383700955E42 /* Frameworks */,
@@ -175,13 +175,13 @@
 				6D26659A2E75383700955E42 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				6D26659B2E75383700955E42 /* eduTableUITests */,
+				6D26659B2E75383700955E42 /* ClassduleUITests */,
 			);
-			name = eduTableUITests;
+			name = ClassduleUITests;
 			packageProductDependencies = (
 			);
 			productName = eduTableUITests;
-			productReference = 6D2665982E75383700955E42 /* eduTableUITests.xctest */;
+			productReference = 6D2665982E75383700955E42 /* ClassduleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -207,7 +207,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6D26657C2E75383600955E42 /* Build configuration list for PBXProject "eduTable" */;
+			buildConfigurationList = 6D26657C2E75383600955E42 /* Build configuration list for PBXProject "Classdule" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -221,9 +221,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6D2665802E75383600955E42 /* eduTable */,
-				6D26658D2E75383700955E42 /* eduTableTests */,
-				6D2665972E75383700955E42 /* eduTableUITests */,
+				6D2665802E75383600955E42 /* Classdule */,
+				6D26658D2E75383700955E42 /* ClassduleTests */,
+				6D2665972E75383700955E42 /* ClassduleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -285,12 +285,12 @@
 /* Begin PBXTargetDependency section */
 		6D2665902E75383700955E42 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6D2665802E75383600955E42 /* eduTable */;
+			target = 6D2665802E75383600955E42 /* Classdule */;
 			targetProxy = 6D26658F2E75383700955E42 /* PBXContainerItemProxy */;
 		};
 		6D26659A2E75383700955E42 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6D2665802E75383600955E42 /* eduTable */;
+			target = 6D2665802E75383600955E42 /* Classdule */;
 			targetProxy = 6D2665992E75383700955E42 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -424,6 +424,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -434,7 +435,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jtam.eduTable;
+				PRODUCT_BUNDLE_IDENTIFIER = jtam.Classdule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -451,6 +452,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -461,7 +463,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jtam.eduTable;
+				PRODUCT_BUNDLE_IDENTIFIER = jtam.Classdule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -478,12 +480,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jtam.eduTableTests;
+				PRODUCT_BUNDLE_IDENTIFIER = jtam.ClassduleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eduTable.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/eduTable";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Classdule.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Classdule";
 			};
 			name = Debug;
 		};
@@ -496,12 +498,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jtam.eduTableTests;
+				PRODUCT_BUNDLE_IDENTIFIER = jtam.ClassduleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eduTable.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/eduTable";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Classdule.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Classdule";
 			};
 			name = Release;
 		};
@@ -512,7 +514,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jtam.eduTableUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = jtam.ClassduleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -528,7 +530,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jtam.eduTableUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = jtam.ClassduleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -540,7 +542,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6D26657C2E75383600955E42 /* Build configuration list for PBXProject "eduTable" */ = {
+		6D26657C2E75383600955E42 /* Build configuration list for PBXProject "Classdule" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6D2665A02E75383700955E42 /* Debug */,
@@ -549,7 +551,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6D2665A22E75383700955E42 /* Build configuration list for PBXNativeTarget "eduTable" */ = {
+		6D2665A22E75383700955E42 /* Build configuration list for PBXNativeTarget "Classdule" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6D2665A32E75383700955E42 /* Debug */,
@@ -558,7 +560,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6D2665A52E75383700955E42 /* Build configuration list for PBXNativeTarget "eduTableTests" */ = {
+		6D2665A52E75383700955E42 /* Build configuration list for PBXNativeTarget "ClassduleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6D2665A62E75383700955E42 /* Debug */,
@@ -567,7 +569,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6D2665A82E75383700955E42 /* Build configuration list for PBXNativeTarget "eduTableUITests" */ = {
+		6D2665A82E75383700955E42 /* Build configuration list for PBXNativeTarget "ClassduleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6D2665A92E75383700955E42 /* Debug */,

@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  eduTable
+//  Classdule
 //
 //  Created by Jonathan Tam on 2025-09-12.
 //

@@ -1,6 +1,6 @@
 //
-//  eduTableApp.swift
-//  eduTable
+//  Classdule.swift
+//  Classdule
 //
 //  Created by Jonathan Tam on 2025-09-12.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct eduTableApp: App {
+struct Classdule: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -1,6 +1,6 @@
 //
 //  DataModels.swift
-//  eduTable
+//  Classdule
 //
 //  Created by Jonathan Tam on 2025-09-12.
 //
@@ -8,19 +8,54 @@
 import Foundation
 import SwiftUI
 
-struct ClassSchedule: Identifiable {
+struct ClassSchedule: Identifiable, Codable {
     
-    let id = UUID()
-    
+    var id = UUID()
     var title: String
-    
-    var dayOfWeek: Int // 0=Sunday...6=Saturday
+    var dayOfWeek: Int
     var startHour: Int
     var startMinute: Int
     var durationMinutes: Int
     
-    var color: Color
+    // Color
+    var colorName: String
+    var color: Color {
+        switch colorName {
+            case "blue": return .blue
+            case "green": return .green
+            case "yellow": return .yellow
+            case "orange": return .orange
+            case "red": return .red
+            case "purple": return .purple
+            default: return .blue
+        }
+    }
     
+    // Initializer
+    init(title: String, dayOfWeek: Int, startHour: Int, startMinute: Int, durationMinutes: Int, color: Color) {
+        self.title = title
+        self.dayOfWeek = dayOfWeek
+        self.startHour = startHour
+        self.startMinute = startMinute
+        self.durationMinutes = durationMinutes
+            
+        switch color {
+        case .green:
+            self.colorName = "green"
+        case .yellow: 
+            self.colorName = "yellow"
+        case .orange: 
+            self.colorName = "orange"
+        case .red:
+            self.colorName = "red"
+        case .purple:
+            self.colorName = "purple"
+        default: 
+            self.colorName = "blue"
+        }
+    }
+
+    // Display Time
     var timeDisplay: String {
         let startTime = formatTime(hour: startHour, minute: startMinute)
         let endTime = calculateEndTime()

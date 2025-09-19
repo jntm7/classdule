@@ -1,13 +1,13 @@
 //
-//  eduTableUITestsLaunchTests.swift
-//  eduTableUITests
+//  ClassduleUITestsLaunchTests.swift
+//  ClassduleUITests
 //
 //  Created by Jonathan Tam on 2025-09-12.
 //
 
 import XCTest
 
-final class eduTableUITestsLaunchTests: XCTestCase {
+final class ClassduleUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
